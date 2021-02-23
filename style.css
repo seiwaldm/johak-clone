@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+  overflow-x: hidden;
+}
+
+:root {
+  --tuerkis: #80ccdb;
+  --blau: #005577;
+  --rot: #e4003a;
+  --orange: #f7a823;
+  --dunkelblau: #1a2e3c;
+  --schwarz: #180f00;
+}
+
+header {
+  position: absolute;
+  top: 50px;
+  height: 80px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: minmax(250px, 100vw);
+  grid-template-rows: 50px 938px 615px 790px auto 940px 484px 133px;
+  grid-template-areas:
+    "top-bar"
+    "hero-section"
+    "schulzweige"
+    "claim"
+    "news"
+    "termine"
+    "foto-slider"
+    "sponsoren";
+
+  /* justify-items: center; */
+}
+
+.top-bar {
+  grid-area: top-bar;
+  background-color: var(--dunkelblau);
+}
+.hero-section {
+  grid-area: hero-section;
+  background-image: url("assets/hero-background.jpg");
+  background-position: right;
+  background-size: cover;
+}
+
+.schulzweige {
+  grid-area: schulzweige;
+  background-color: var(--dunkelblau);
+}
+
+.claim {
+  grid-area: claim;
+}
+
+.news {
+  grid-area: news;
+  background-color: var(--tuerkis);
+}
+
+.termine {
+  grid-area: termine;
+  background-color: #f6f6f7;
+}
+
+.foto-slider {
+  grid-area: foto-slider;
+}
+
+.sponsoren {
+  grid-area: sponsoren;
+}
+
+footer {
+  background-color: var(--dunkelblau);
+  height: 57px;
+}
