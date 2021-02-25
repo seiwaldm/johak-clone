@@ -23,6 +23,13 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  /* Alternative in css-grid: */
+  /* display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  align-content: center; */
+
   padding: 0 50px;
 }
 
