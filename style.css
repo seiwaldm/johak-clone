@@ -33,12 +33,13 @@ header {
   align-content: center; */
 
   padding: 0 50px;
+  z-index: 1;
 }
 
 main {
   display: grid;
   grid-template-columns: minmax(250px, 100vw);
-  grid-template-rows: 50px 938px 615px 790px auto 940px 484px 133px;
+  grid-template-rows: 50px 900px 615px 790px auto 940px 484px 133px;
   grid-template-areas:
     "top-bar"
     "hero-section"
@@ -59,10 +60,69 @@ main {
 .hero-section {
   grid-area: hero-section;
   background-image: url("assets/hero-background.jpg");
-  background-position: right;
-  background-size: cover;
+  background-position: right top;
+  overflow: hidden;
+  position: relative; /*anchor for child-elements*/
+}
+.hero-section .slide-corner {
+  opacity: 0.5;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+.hero-section .hak {
+  font-size: 560px;
+  color: #fff;
+  font-family: "coco_gothicbold";
+  position: absolute;
+  letter-spacing: -50px;
+  top: -200px;
+  right: -50px;
 }
 
+.hero-section .hak .bigsmall {
+  font-size: 150%;
+  letter-spacing: -80px;
+  font-family: "coco_gothicregular";
+}
+
+.hero-section .claim {
+  position: absolute;
+  top: 400px;
+  right: 10px;
+}
+.hero-section .tablet {
+  position: absolute;
+  top: 170px;
+}
+
+.hero-section .join {
+  font-family: "coco_gothicbold";
+  color: var(--dunkelblau);
+  font-size: 120px;
+  line-height: 133px;
+  letter-spacing: -0.06em;
+  position: absolute;
+  top: 500px;
+  left: 700px;
+  width: 100%;
+}
+
+#more {
+  background-color: var(--dunkelblau);
+  color: #fff;
+  position: absolute;
+  left: 700px;
+  top: 800px;
+  border: none;
+}
+
+#more:hover {
+  background-color: var(--rot);
+  cursor: pointer;
+}
 .schulzweige {
   grid-area: schulzweige;
   background-color: var(--dunkelblau);
@@ -101,25 +161,25 @@ main {
   line-height: 24px;
 }
 
-.schulzweig button {
+button {
   border: none;
   background-color: transparent;
   padding: 9px 34px;
   border-radius: 2px;
   transition: 0.5s;
   font-family: "hak-bqBdCn";
-  font-size: 12px;
+  font-size: 14px;
 }
 
-.schulzweig button#bp-button:hover {
+#bp-button:hover {
   background-color: var(--rot);
   cursor: pointer;
 }
-.schulzweig button#it-button:hover {
+#it-button:hover {
   background-color: var(--tuerkis);
   cursor: pointer;
 }
-.schulzweig button#has-button:hover {
+#has-button:hover {
   background-color: var(--orange);
   cursor: pointer;
 }
