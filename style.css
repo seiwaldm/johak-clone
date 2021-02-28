@@ -1,3 +1,5 @@
+@import "assets/fonts.css";
+
 * {
   margin: 0;
   padding: 0;
@@ -64,8 +66,71 @@ main {
 .schulzweige {
   grid-area: schulzweige;
   background-color: var(--dunkelblau);
+
+  display: grid;
+  grid-template-columns: repeat(3, minmax(250px, 350px));
+  grid-gap: 5vw;
+  justify-content: center;
+  align-content: center;
 }
 
+.schulzweig {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.schulzweig img {
+  transition: 0.5s;
+}
+
+.schulzweig img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.schulzweig * {
+  margin: 10px 0;
+  color: #fff;
+  text-align: center;
+}
+
+.schulzweig-teaser {
+  font-family: "hak-bqcondensed";
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.schulzweig button {
+  border: none;
+  background-color: transparent;
+  padding: 9px 34px;
+  border-radius: 2px;
+  transition: 0.5s;
+  font-family: "hak-bqBdCn";
+  font-size: 12px;
+}
+
+.schulzweig button#bp-button:hover {
+  background-color: var(--rot);
+  cursor: pointer;
+}
+.schulzweig button#it-button:hover {
+  background-color: var(--tuerkis);
+  cursor: pointer;
+}
+.schulzweig button#has-button:hover {
+  background-color: var(--orange);
+  cursor: pointer;
+}
+
+.handschrift {
+  font-family: "handschrift-bolder";
+  font-size: 45px;
+  line-height: 45px;
+  padding: 15px;
+  /* margin: 0; */
+}
 .claim {
   grid-area: claim;
 }

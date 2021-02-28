@@ -1,0 +1,133 @@
+@font-face {
+  font-family: "coco_gothicbold";
+  src: url("https://www.johak.at/wp-content/themes/johak/fonts/coco-gothic-webfont/coco-gothic-bold-webfont.woff2")
+      format("woff2"),
+    url("https://www.johak.at/wp-content/themes/johak/fonts/coco-gothic-webfont/coco-gothic-bold-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "coco_gothicregular";
+  src: url("https://www.johak.at/wp-content/themes/johak/fonts/coco-gothic-webfont/coco-gothic-regular-webfont.woff2")
+      format("woff2"),
+    url("https://www.johak.at/wp-content/themes/johak/fonts/coco-gothic-webfont/coco-gothic-regular-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "coco_gothiclight";
+  src: url("https://www.johak.at/wp-content/themes/johak/fonts/coco-gothic-webfont/coco-gothic-light-webfont.woff2")
+      format("woff2"),
+    url("https://www.johak.at/wp-content/themes/johak/fonts/coco-gothic-webfont/coco-gothic-light-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Hanschrift */
+
+@font-face {
+  font-family: "handschrift-bolder";
+  src: url("https://www.johak.at/wp-content/themes/johak/fonts/handschrift/handschrift-bolder-webfont.woff2")
+      format("woff2"),
+    url("https://www.johak.at/wp-content/themes/johak/fonts/handschrift/handschrift-bolder-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "handschrift-regular";
+  src: url("https://www.johak.at/wp-content/themes/johak/fonts/handschrift/handschrift-webfont.woff2")
+      format("woff2"),
+    url("https://www.johak.at/wp-content/themes/johak/fonts/handschrift/handschrift-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Content*/
+
+@font-face {
+  font-family: "hak-bqbold";
+  src: url("https://www.johak.at/wp-content/themes/johak/fonts/akzidenz-grotesk-webfont/hak-bold-webfont.woff2")
+      format("woff2"),
+    url("https://www.johak.at/wp-content/themes/johak/fonts/akzidenz-grotesk-webfont/hak-bold-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "hak-bqBdCn";
+  src: url("https://www.johak.at/wp-content/themes/johak/fonts/akzidenz-grotesk-webfont/hak-boldcond-webfont.woff2")
+      format("woff2"),
+    url("https://www.johak.at/wp-content/themes/johak/fonts/akzidenz-grotesk-webfont/hak-boldcond-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "hak-bqcondensed";
+  src: url("https://www.johak.at/wp-content/themes/johak/fonts/akzidenz-grotesk-webfont/hak-cond-webfont.woff2")
+      format("woff2"),
+    url("https://www.johak.at/wp-content/themes/johak/fonts/akzidenz-grotesk-webfont/hak-cond-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "hak-bqlight";
+  src: url("https://www.johak.at/wp-content/themes/johak/fonts/akzidenz-grotesk-webfont/hak-light-webfont.woff2")
+      format("woff2"),
+    url("https://www.johak.at/wp-content/themes/johak/fonts/akzidenz-grotesk-webfont/hak-light-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "hak-bqLtCn";
+  src: url("https://www.johak.at/wp-content/themes/johak/fonts/akzidenz-grotesk-webfont/hak-lightcond-webfont.woff2")
+      format("woff2"),
+    url("https://www.johak.at/wp-content/themes/johak/fonts/akzidenz-grotesk-webfont/hak-lightcond-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "hak-bqmedium";
+  src: url("https://www.johak.at/wp-content/themes/johak/fonts/akzidenz-grotesk-webfont/hak-medium-webfont.woff2")
+      format("woff2"),
+    url("https://www.johak.at/wp-content/themes/johak/fonts/akzidenz-grotesk-webfont/hak-medium-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "hak-bqMdCn";
+  src: url("https://www.johak.at/wp-content/themes/johak/fonts/akzidenz-grotesk-webfont/hak-mediumcond-webfont.woff2")
+      format("woff2"),
+    url("https://www.johak.at/wp-content/themes/johak/fonts/akzidenz-grotesk-webfont/hak-mediumcond-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "hak-bqregular";
+  src: url("https://www.johak.at/wp-content/themes/johak/fonts/akzidenz-grotesk-webfont/hak-regular-webfont.woff2")
+      format("woff2"),
+    url("https://www.johak.at/wp-content/themes/johak/fonts/akzidenz-grotesk-webfont/hak-regular-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
