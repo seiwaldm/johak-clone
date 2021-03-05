@@ -56,6 +56,26 @@ main {
 .top-bar {
   grid-area: top-bar;
   background-color: var(--dunkelblau);
+  padding-right: 30px;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.top-bar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 0.3rem;
+  font-size: 20px;
+  transition-duration: 0.5s;
+}
+.top-bar a:hover {
+  color: var(--rot);
+}
+.top-bar span {
+  font-family: "hak-bqcondensed";
+  font-size: 26px;
+  margin: 0 0.2rem;
 }
 .hero-section {
   grid-area: hero-section;
