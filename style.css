@@ -100,6 +100,18 @@ main {
   letter-spacing: -50px;
   top: -200px;
   right: -50px;
+  animation-name: grow;
+  animation-duration: 1.7s;
+  animation-
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .hero-section .hak .bigsmall {
@@ -115,9 +127,44 @@ main {
 }
 .hero-section .tablet {
   position: absolute;
+  left: -2000px;
   top: 170px;
+  animation-name: slide-left;
+  animation-delay: 0.9s;
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
 }
 
+@keyframes slide-left {
+  0% {
+    left: -2000px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+.slide-right
+{
+  position: relative;
+  right:-2000px;
+  height: 100%;
+  animation-name: slide-right;
+  animation-delay: 1.2s;
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide-right {
+  0%{
+    right:-2000px;
+  }
+  100%{
+    right: 0px;
+  }
+
+  
+}
 .hero-section .join {
   font-family: "coco_gothicbold";
   color: var(--dunkelblau);
