@@ -17,7 +17,7 @@
   --schwarz: #180f00;
 }
 
-header {
+.menu-header {
   position: absolute;
   top: 50px;
   height: 80px;
@@ -25,6 +25,30 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  /* Alternative in css-grid: */
+  /* display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  align-content: center; */
+
+  padding: 0 50px;
+  z-index: 1;
+}
+
+.menu-header-scroll {
+  position: fixed;
+  top: -80px;
+  height: 80px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+
+  background-color: #fff;
+  transition-property: top;
+  transition-duration: 1s;
 
   /* Alternative in css-grid: */
   /* display: grid;
@@ -102,15 +126,14 @@ main {
   right: -50px;
   animation-name: grow;
   animation-duration: 1.7s;
-  animation-
 }
 
 @keyframes grow {
   0% {
-    transform: scale(0);
+    transform: scale(0, 0);
   }
   100% {
-    transform: scale(1);
+    transform: scale(1, 1);
   }
 }
 
@@ -144,10 +167,9 @@ main {
   }
 }
 
-.slide-right
-{
+.slide-right {
   position: relative;
-  right:-2000px;
+  right: -2000px;
   height: 100%;
   animation-name: slide-right;
   animation-delay: 1.2s;
@@ -156,14 +178,12 @@ main {
 }
 
 @keyframes slide-right {
-  0%{
-    right:-2000px;
+  0% {
+    right: -2000px;
   }
-  100%{
+  100% {
     right: 0px;
   }
-
-  
 }
 .hero-section .join {
   font-family: "coco_gothicbold";
