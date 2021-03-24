@@ -36,6 +36,10 @@
   z-index: 1;
 }
 
+nav {
+  position: fixed;
+}
+
 .menu-header-scroll {
   position: fixed;
   top: -80px;
@@ -50,14 +54,12 @@
   transition-property: top;
   transition-duration: 1s;
 
-  /* Alternative in css-grid: */
-  /* display: grid;
-  grid-template-columns: auto auto;
-  justify-content: space-between;
-  align-content: center; */
-
   padding: 0 50px;
   z-index: 1;
+}
+
+header img {
+  cursor: pointer;
 }
 
 main {

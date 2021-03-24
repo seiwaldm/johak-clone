@@ -1,5 +1,9 @@
 window.addEventListener("scroll", navbar);
+document.addEventListener("click", forward);
 
+function forward() {
+  window.open("https://www.johak.at", "_self");
+}
 function navbar() {
   let header = document.querySelector(".menu-header-scroll");
 
